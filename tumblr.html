@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="{block:English}en{/block:English}{block:French}fr{/block:French}{block:German}de{/block:German}{block:Japanese}ja{/block:Japanese}{block:Italian}it{/block:Italian}{block:Spanish}es{/block:Spanish}{block:Polish}pl{/block:Polish}">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name=viewport content='width=device-width, initial-scale=1'>
+
+  <!--*******************************************************
+  Name: TUTC202
+  URL: http://otherthemes.com
+  Author: Other Themes
+  Version: 1.0.0
+  Changelog:
+  13.05.2020 Initial release
+  ********************************************************--> 
+
+  <!-- Custom Variables -->
+  {block:Hidden}
+  <meta name="image:Logo" content="" />
+  <meta name="if:Sticky Header" content="0" />
+  <meta name="color:Text Color" content="#000" />
+  
+  <meta name="select:Text" content="18" title="18px">
+  <meta name="select:Text" content="20" title="20px">
+  <meta name="select:Text" content="22" title="22px">
+  <meta name="select:Text" content="24" title="24px">
+  <meta name="select:Text" content="26" title="26px">
+  <meta name="select:Text" content="28" title="28px">
+  <meta name="select:Text" content="30" title="30px">
+  <meta name="select:Text" content="32" title="32px">
+  <meta name="select:Text" content="34" title="34px">
+  <meta name="select:Text" content="36" title="36px">
+  <meta name="select:Text" content="38" title="38px">
+  <meta name="select:Text" content="40" title="40px">
+  <meta name="select:Text" content="42" title="42px">
+  
+  <meta name="select:Page Title" content="90" title="90px">
+  <meta name="select:Page Title" content="92" title="92px">
+  <meta name="select:Page Title" content="94" title="94px">
+  <meta name="select:Page Title" content="96" title="96px">
+  <meta name="select:Page Title" content="98" title="98px">
+  <meta name="select:Page Title" content="100" title="100px">
+  <meta name="select:Page Title" content="102" title="102px">
+  <meta name="select:Page Title" content="104" title="104px">
+  <meta name="select:Page Title" content="106" title="106px">
+  <meta name="select:Page Title" content="108" title="108px">
+  <meta name="select:Page Title" content="110" title="110px">
+  <meta name="select:Page Title" content="112" title="112px">
+  <meta name="select:Page Title" content="114" title="114px">
+  
+  <meta name="select:Post Title" content="36" title="36px">
+  <meta name="select:Post Title" content="38" title="38px">
+  <meta name="select:Post Title" content="40" title="40px">
+  <meta name="select:Post Title" content="42" title="42px">
+  <meta name="select:Post Title" content="44" title="44px">
+  <meta name="select:Post Title" content="46" title="46px">
+  <meta name="select:Post Title" content="48" title="48px">
+  <meta name="select:Post Title" content="50" title="50px">
+  <meta name="select:Post Title" content="52" title="52px">
+  <meta name="select:Post Title" content="54" title="54px">
+  <meta name="select:Post Title" content="56" title="56px">
+  <meta name="select:Post Title" content="58" title="58px">
+  <meta name="select:Post Title" content="60" title="60px">
+
+  <meta name="select:Image Width" content="500px" title="500px">
+  <meta name="select:Image Width" content="600px" title="600px">
+  <meta name="select:Image Width" content="700px" title="700px">
+  <meta name="select:Image Width" content="800px" title="800px">
+  <meta name="select:Image Width" content="900px" title="900px">
+  <meta name="select:Image Width" content="1000px" title="1000px">
+  
+  <meta name="text:Google Fonts" content="Montserrat">
+  <meta name="if:Google Fonts" content="1">
+  
+  <meta name="if:Centre Page" content="0" />
+  <meta name="if:Show Menu" content="1" />
+  <meta name="if:Show Date" content="1" />
+  <meta name="if:Show Tags" content="1" />
+  <meta name="if:Show Like" content="0" />
+  <meta name="if:Show Reblog" content="0" />
+  <meta name="if:Show Notes" content="1" />
+  
+  <meta name="if:Show Archive" content="0" />
+  <meta name="if:Endless Scroll" content="0" />
+  
+  <meta name="if:Facebook URL" content="1">
+  <meta name="if:Dribbble URL" content="1">
+  <meta name="if:Twitter URL" content="1">
+  <meta name="if:Instagram URL" content="1" />
+  <meta name="if:Youtube URL" content="0" />
+  
+  <meta name="text:Twitter URL" content="https://twitter.com/otherthemes">
+  <meta name="text:Facebook URL" content="https://www.facebook.com/otherthemes/">
+  <meta name="text:Instagram URL" content="https://instagram.com/otherthemes" />
+  <meta name="text:Youtube URL" content="" />
+  <meta name="text:Dribbble URL" content="https://dribbble.com/otherthemes">
+  <meta name="text:Google Analytics ID" content="" />
+  {/block:Hidden}
+
+  <title>{Title}{block:PostSummary} &mdash; {PostSummary}{/block:PostSummary}</title>
+
+  {block:Description}
+  <meta name="description" content="{MetaDescription}">
+  {/block:Description}
+
+  
+  <link rel="apple-touch-icon" href="{PortraitURL-128}">
+  <link rel="shortcut icon" href="{Favicon}">
+  <link rel="alternate" type="application/rss+xml" href="{RSS}">
+
+  {block:IfGoogleFonts}
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family={text:Google Fonts}:400,400italic,500,700,700italic">
+  {/block:IfGoogleFonts}
+  
+  <script src="https://code.jquery.com/jquery-2.2.2.min.js"></script>
+  {block:IndexPage}
+  <script src="https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
+  {/block:IndexPage}
+
+  <link href="https://static.tumblr.com/nxwjyyg/cdhqa9kd7/style.min.css" rel="stylesheet" type="text/css">
+
+  <style>  
+  /* code specifically relating to the theme options */
+  
+  .post-footer,
+  .post-meta,
+  .header .menu,
+  .wrapper-heading,
+  .post-content {
+      max-width: 800px !important;
+  }
+  
+  @media only screen and (min-width: 900px) {
+    #infscr-loading,
+    body.has-sticky .menu.menu-sticky {
+        margin-left: calc({select:Image Width} + 40px);
+    }
+
+    .post-notes .notes,
+    .block-dummy,
+    .post-dummy,
+    .pagination-previous,
+    .wrapper-image,
+    .post.photo:not(.photoset) > a:first-child {
+        max-width: {select:Image Width};
+    }
+  }
+
+  body {
+    font-family: {font:Font}, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: {select:Text}px;
+    background: {BackgroundColor};
+    color: {color:Text Color};
+  }
+
+  {block:IfGoogleFonts}
+  body {
+    font-family: '{text:Google Fonts}', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+  {/block:IfGoogleFonts}
+  
+  .header h1 {
+      font-size: {select:Page Title}px;
+  }
+  
+  h2,
+  .post-quote .quote {
+      font-size: {select:Post Title}px;
+  }
+  
+  .post .media {
+      max-width: 640px;
+  }
+  
+  .post .media,
+  .post .photo-slideshow,
+  .post:not(.photoset) img {
+      max-width: {select:Image Width};
+  }
+  
+  .post.photo:not(.photoset) .width-max-content,
+  .post .photo-slideshow.width-max-content {
+      max-width: max-content;
+  }
+  
+  .post .photo-slideshow {
+      width: 100%;
+  }
+  
+  .post:not(.photoset) img {
+      width: 100%;
+  }
+
+  .chat .reblogs {
+    display: none;
+  }
+  
+  {block:IfNotShowNotes}
+  .post-footer .item-notes {
+    display: none;
+  }
+  {/block:IfNotShowNotes}
+  
+  {block:IfNotShowDate}
+  .post-date {
+    display: none;
+  }
+  {/block:IfNotShowDate}
+  
+  {block:IfNotShowTags}
+  .post-footer .item-tags {
+    display: none;
+  }
+  {/block:IfNotShowTags}
+  
+  {block:IfNotShowReblog}
+  .post-footer .item-reblog {
+    display: none;
+  }
+  {/block:IfNotShowReblog}
+
+  {block:IfNotShowLike}
+  .post-footer .item-like {
+    display: none;
+  }
+  {/block:IfNotShowLike}
+
+  {CustomCSS}
+  </style>
+
+  {block:IfGoogleAnalyticsID}
+  <script>
+  (function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+      (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date(); a = s.createElement(o),
+    m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+  ga('create', '{text:Google Analytics ID}', 'auto');
+  ga('send', 'pageview');
+  </script>
+  {/block:IfGoogleAnalyticsID}
+
+</head>
+
+<body class="{block:IndexPage}page-index{/block:IndexPage}{block:PermalinkPage}permalink{/block:PermalinkPage}{block:IfGoogleFonts} has-google-fonts{/block:IfGoogleFonts}{block:IfShowMenu}{block:IfStickyHeader} has-sticky{/block:IfStickyHeader}{/block:IfShowMenu}{block:IfCentrePage} is-centered{/block:IfCentrePage} width-{select:Image Width}">
+    <div class="wrapper">
+    {block:IfShowMenu}
+    <nav class="menu menu-sticky" aria-label="Primary">
+      <ul class="list">
+        {block:HasPages}{block:Pages}<li class="item"><a class="url" href="{URL}">{Label}</a></li>{/block:Pages}{/block:HasPages}
+        {block:IfShowArchive}<li class="item"><a class="url" href="/archive">{lang:Archive}</a></li>{/block:IfShowArchive}
+        {block:AskEnabled}<li class="item"><a class="url" href="/ask">{AskLabel}</a>{/block:AskEnabled}
+        {block:SubmissionsEnabled}<li class="item"><a class="url" href="/submit">{SubmitLabel}</a>{/block:SubmissionsEnabled}
+        {block:IfTwitterURL}<li class="item"> <a class="url" href="{text:Twitter URL}" {Target}>Twitter</a> </li>{/block:IfTwitterURL}
+        {block:IfFacebookURL}<li class="item"> <a class="url" href="{text:Facebook URL}" {Target}>Facebook</a> </li>{/block:IfFacebookURL}
+        {block:IfInstagramURL}<li class="item"> <a class="url" href="{text:Instagram URL}" {Target}>Instagram</a> </li>{/block:IfInstagramURL}
+        {block:IfYoutubeURL}<li class="item"> <a class="url" href="{text:Youtube URL}" {Target}>Youtube</a> </li>{/block:IfYoutubeURL}
+        {block:IfDribbbleURL}<li class="item"> <a class="url" href="{text:Dribbble URL}" {Target}>Dribbble</a> </li>{/block:IfDribbbleURL}
+      </ul>
+    </nav>
+    {/block:IfShowMenu}
+  <header class="header{block:ShowAvatar} has-avatar avatar-style-{AvatarShape}{/block:ShowAvatar} width-{select:Image Width}">
+    <div class="wrapper wrapper-image">
+        {block:IfLogoImage}
+        <div class="">
+          <a class="logo" href="/" style="background-image: url('{image:Logo}')" role="presentation"><img src="{image:Logo}" alt="" class="invisible"></a>
+        </div>
+        {/block:IfLogoImage}
+    
+        {block:ShowAvatar}
+        <div class="">
+            <a class="user-avatar" href="/" style="background-image: url({PortraitURL-128})" role="presentation"><img src="{PortraitURL-128}" alt="" class="invisible"></a>
+        </div>
+        {/block:ShowAvatar}
+    </div>
+    
+    <div class="wrapper wrapper-heading">
+        {block:ShowDescription}
+        {block:Description}
+        <p class="description">{Description}</p>
+        {/block:Description}
+        {/block:ShowDescription}
+    
+        <h1><a href="/" class="header__title">{Title}</a></h1>
+        
+        {block:IfShowMenu}
+        <nav class="menu" aria-label="Primary">
+          <ul class="list">
+            {block:HasPages}{block:Pages}<li class="item"><a class="url" href="{URL}">{Label}</a></li>{/block:Pages}{/block:HasPages}
+            {block:IfShowArchive}<li class="item"><a class="url" href="/archive">{lang:Archive}</a></li>{/block:IfShowArchive}
+            {block:AskEnabled}<li class="item"><a class="url" href="/ask">{AskLabel}</a>{/block:AskEnabled}
+            {block:SubmissionsEnabled}<li class="item"><a class="url" href="/submit">{SubmitLabel}</a>{/block:SubmissionsEnabled}
+            {block:IfTwitterURL}<li class="item"> <a class="url" href="{text:Twitter URL}" {Target}>Twitter</a> </li>{/block:IfTwitterURL}
+            {block:IfFacebookURL}<li class="item"> <a class="url" href="{text:Facebook URL}" {Target}>Facebook</a> </li>{/block:IfFacebookURL}
+            {block:IfInstagramURL}<li class="item"> <a class="url" href="{text:Instagram URL}" {Target}>Instagram</a> </li>{/block:IfInstagramURL}
+            {block:IfYoutubeURL}<li class="item"> <a class="url" href="{text:Youtube URL}" {Target}>Youtube</a> </li>{/block:IfYoutubeURL}
+            {block:IfDribbbleURL}<li class="item"> <a class="url" href="{text:Dribbble URL}" {Target}>Dribbble</a> </li>{/block:IfDribbbleURL}
+          </ul>
+        </nav>
+        {/block:IfShowMenu}
+    </div>
+  </header>
+
+  <main id="main" class="posts">
+    {block:NoSearchResults}
+    <section class="content text-center">
+      <h2 class="title">Sorry, nothing found for &ldquo;{SearchQuery}&rdquo;.</h2>
+      <br>
+      <form class="search" action="/search" method="get">
+        <label><span class="sr-only">Search</span>
+          <input class="search__input" type="text" name="q" placeholder="Search..." value="{SearchQuery}" />
+        </label>
+        <input class="search__button fa" type="submit" value="&#xf002;" alt="Submit Search">
+      </form>
+    </section>
+    {/block:NoSearchResults}
+
+    {block:TagPage}
+    <section class="content">
+      <h2 class="title">#{Tag}</h2>
+    </section>
+    {/block:TagPage}
+
+    {block:DayPage}
+      <section class="content">
+          <h2 class="title">{Month} {DayOfMonth}, {Year}</h2>
+      </section>
+    {/block:DayPage}
+
+        {block:Posts}
+        <article id="{PostID}-post" class="content post {PostType}{block:Photoset} photoset{/block:Photoset}">
+
+          {block:Text}
+          <div class="post-dummy"></div>
+          <div class="post-content">
+              {block:Date}
+              <div class="post-date">
+                <a class="timestamp" href="{Permalink}" title="{DayOfWeek}, {DayOfMonth} {Month} {Year}, {24Hour}:{Minutes}:{Seconds}">{DayOfMonthWithZero}/{MonthNumberWithZero}/{Year}</a>
+              </div>
+              {/block:Date}
+              {block:Title}
+              <h2 class="title"><a href="{Permalink}">{Title}</a></h2>
+              {/block:Title}
+              {block:NotReblog}
+              <section class="caption">
+                {Body}
+              </section>
+              {block:More}<a href="{Permalink}">Read More &rarr;</a>{/block:More}
+              {/block:NotReblog}
+              
+              {block:Date}
+              <footer class="post-footer">
+                <ul class="list">
+                {block:NoteCount}
+                  <li class="item item-notes">
+                    <a id="notes" class="notes" href="{Permalink}#notes">{NoteCountWithLabel}</a>
+                  </li>
+                {/block:NoteCount}
+        
+                {block:HasTags}
+                <li class="item item-tags">
+                  <ul class="post-tags">
+                  {block:Tags}
+                    <li class="item">
+                      <a class="post__tag-link" href="{TagURL}">#{Tag}</a>
+                    </li>
+                  {/block:Tags}
+                  </ul>
+                </li>
+                {/block:HasTags}
+                <li class="item item-like">{LikeButton}</li>
+                <li class="item item-reblog"><a class="reblog_button" href="{ReblogURL}">Reblog</a></li>
+              </ul>
+            </footer>
+            {/block:Date}
+              <ul class="custom-social">
+                {block:IfTwitterURL}<li class="item"> <a class="url" href="{text:Twitter URL}" {Target}>Twitter</a> </li>{/block:IfTwitterURL}
+                {block:IfFacebookURL}<li class="item"> <a class="url" href="{text:Facebook URL}" {Target}>Facebook</a> </li>{/block:IfFacebookURL}
+                {block:IfInstagramURL}<li class="item"> <a class="url" href="{text:Instagram URL}" {Target}>Instagram</a> </li>{/block:IfInstagramURL}
+                {block:IfYoutubeURL}<li class="item"> <a class="url" href="{text:Youtube URL}" {Target}>Youtube</a> </li>{/block:IfYoutubeURL}
+                {block:IfDribbbleURL}<li class="item"> <a class="url" href="{text:Dribbble URL}" {Target}>Dribbble</a> </li>{/block:IfDribbbleURL}
+             </ul>
+          </div>
+         {/block:Text}
+
+          {block:Photo}
+          {LinkOpenTag}
+                    <img
+                      data-sizes="auto"
+                        src="{PhotoURL-HighRes}"
+                      data-srcset="{PhotoURL-400} 200w,
+                        {PhotoURL-500} 250w,
+                        {PhotoURL-HighRes} 400w" class="width-{select:Image Width}" alt="{PhotoAlt}" />
+          {LinkCloseTag}
+          <div class="post-content">
+              <div class="post-meta">
+                  {block:Date}
+                  <div class="post-date">
+                    <a class="timestamp" href="{Permalink}" title="{DayOfWeek}, {DayOfMonth} {Month} {Year}, {24Hour}:{Minutes}:{Seconds}">{DayOfMonthWithZero}/{MonthNumberWithZero}/{Year}</a>
+                  </div>
+                  {/block:Date}
+                  {block:Caption}
+                  {block:NotReblog}
+                  <section class="caption">
+                    {Caption}
+                  </section>
+                  {block:More}<a href="{Permalink}">Read More &rarr;</a>{/block:More}
+                  {/block:NotReblog}
+                  {/block:Caption}
+              </div>
+              {block:Date}
+              <footer class="post-footer">
+                <ul class="list">
+                    {block:NoteCount}
+                    <li class="item item-notes">
+                      <a id="notes" class="notes" href="{Permalink}#notes">{NoteCountWithLabel}</a>
+                    </li>
+                                {/block:NoteCount}
+    
+                  {block:HasTags}
+                  <li class="item item-tags">
+                      <ul class="post-tags">
+                        {block:Tags}
+                        <li class="item">
+                          <a class="post__tag-link" href="{TagURL}">#{Tag}</a>
+                        </li>
+                        {/block:Tags}
+                      </ul>
+                    </li>
+                  {/block:HasTags}
+                    <li class="item item-like">{LikeButton}</li>
+                    <li class="item item-reblog"><a class="reblog_button" href="{ReblogURL}">Reblog</a></li>
+                </ul>
+              </footer>
+              {/block:Date}
+          </div>
+          {/block:Photo}
+
+          {block:Photoset}
+          <div class="photo-slideshow width-{select:Image Width}" id="photoset_{PostID}" data-layout="{PhotosetLayout}">
+                        {block:Photos}
+                        <div class="photo-data">
+                            <div class="pxu-photo">
+                                <a class="tumblr-box" rel="post-{PostID}" href="{PhotoURL-HighRes}">
+                                    <img
+                                      data-sizes="auto"
+                                        src="{PhotoURL-HighRes}"
+                                      data-srcset="{PhotoURL-400} 200w,
+                                        {PhotoURL-500} 250w,
+                                        {PhotoURL-HighRes} 400w" alt="{PhotoAlt}"
+                                        data-highres="{PhotoURL-HighRes}" 
+                                        data-width="{PhotoWidth-HighRes}" 
+                                        data-height="{PhotoHeight-HighRes}" />
+                                </a>
+                            </div>
+                        </div>
+                        {/block:Photos}
+          </div>
+          <div class="post-content">
+              <div class="post-meta">
+                  {block:Date}
+                  <div class="post-date">
+                    <a class="timestamp" href="{Permalink}" title="{DayOfWeek}, {DayOfMonth} {Month} {Year}, {24Hour}:{Minutes}:{Seconds}">{DayOfMonthWithZero}/{MonthNumberWithZero}/{Year}</a>
+                  </div>
+                  {/block:Date}
+                  {block:Caption}
+                  {block:NotReblog}
+                  <section class="caption">
+                    {Caption}
+                  </section>
+                  {block:More}<a href="{Permalink}">Read More &rarr;</a>{/block:More}
+                  {/block:NotReblog}
+                  {/block:Caption}
+              </div>
+              {block:Date}
+              <footer class="post-footer">
+                <ul class="list">
+                    {block:NoteCount}
+                    <li class="item item-notes">
+                      <a id="notes" class="notes" href="{Permalink}#notes">{NoteCountWithLabel}</a>
+                    </li>
+                                {/block:NoteCount}
+    
+                  {block:HasTags}
+                  <li class="item item-tags">
+                      <ul class="post-tags">
+                        {block:Tags}
+                        <li class="item">
+                          <a class="post__tag-link" href="{TagURL}">#{Tag}</a>
+                        </li>
+                        {/block:Tags}
+                      </ul>
+                    </li>
+                  {/block:HasTags}
+                    <li class="item item-like">{LikeButton}</li>
+                    <li class="item item-reblog"><a class="reblog_button" href="{ReblogURL}">Reblog</a></li>
+                </ul>
+              </footer>
+              {/block:Date}
+          </div>
+          {/block:Photoset}
+
+          {block:Quote}
+          <div class="post-dummy"></div>
+          <div class="post-content">
+              {block:Date}
+              <div class="post-date">
+                <a class="timestamp" href="{Permalink}" title="{DayOfWeek}, {DayOfMonth} {Month} {Year}, {24Hour}:{Minutes}:{Seconds}">{DayOfMonthWithZero}/{MonthNumberWithZero}/{Year}</a>
+              </div>
+              {/block:Date}
+              <blockquote class="post-quote">
+                <div class="quote">{Quote}</div>
+                {block:Source}
+                <footer class="source">&ndash; {Source}</footer>
+                {/block:Source}
+              </blockquote>
+              {block:More}<a href="{Permalink}">Read More &rarr;</a>{/block:More}
+                  {block:Date}
+                  <footer class="post-footer">
+                    <ul class="list">
+                        {block:NoteCount}
+                        <li class="item item-notes">
+                          <a id="notes" class="notes" href="{Permalink}#notes">{NoteCountWithLabel}</a>
+                        </li>
+                                    {/block:NoteCount}
+        
+                      {block:HasTags}
+                      <li class="item item-tags">
+                          <ul class="post-tags">
+                            {block:Tags}
+                            <li class="item">
+                              <a class="post__tag-link" href="{TagURL}">#{Tag}</a>
+                            </li>
+                            {/block:Tags}
+                          </ul>
+                        </li>
+                      {/block:HasTags}
+                        <li class="item item-like">{LikeButton}</li>
+                        <li class="item item-reblog"><a class="reblog_button" href="{ReblogURL}">Reblog</a></li>
+                    </ul>
+                  </footer>
+                  {/block:Date}
+          </div>
+          {/block:Quote}
+
+          {block:Link}
+          {block:Date}
+          <div class="post-dummy"></div>
+          <div class="post-content">
+              <div class="post-date">
+                <a class="timestamp" href="{Permalink}" title="{DayOfWeek}, {DayOfMonth} {Month} {Year}, {24Hour}:{Minutes}:{Seconds}">{DayOfMonthWithZero}/{MonthNumberWithZero}/{Year}</a>
+              </div>
+              {/block:Date}
+              <h2 class="title"><a href="{URL}" {Target}>{Name} &rarr;</a></h2>
+              {block:NotReblog}
+              {block:Description}
+              <section class="caption">
+                {Description}
+              </section>
+              {block:More}<a href="{Permalink}">Read More &rarr;</a>{/block:More}
+              {/block:Description}
+              {/block:NotReblog}
+              {block:Date}
+              <footer class="post-footer">
+                <ul class="list">
+                {block:NoteCount}
+                  <li class="item item-notes">
+                    <a id="notes" class="notes" href="{Permalink}#notes">{NoteCountWithLabel}</a>
+                  </li>
+                {/block:NoteCount}
+        
+                {block:HasTags}
+                  <li class="item item-tags">
+                    <ul class="post-tags">
+                    {block:Tags}
+                      <li class="item">
+                        <a class="post__tag-link" href="{TagURL}">#{Tag}</a>
+                      </li>
+                    {/block:Tags}
+                    </ul>
+                  </li>
+                {/block:HasTags}
+                <li class="item item-like">{LikeButton}</li>
+                <li class="item item-reblog"><a class="reblog_button" href="{ReblogURL}">Reblog</a></li>
+              </ul>
+            </footer>
+            {/block:Date}
+        </div>
+        {/block:Link}
+
+          {block:Chat}
+          <div class="post-dummy"></div>
+          <div class="post-content">
+              {block:Date}
+              <div class="post-date">
+                <a class="timestamp" href="{Permalink}" title="{DayOfWeek}, {DayOfMonth} {Month} {Year}, {24Hour}:{Minutes}:{Seconds}">{DayOfMonthWithZero}/{MonthNumberWithZero}/{Year}</a>
+              </div>
+              {/block:Date}
+              {block:Title}
+              <h2 class="title">{Title}</h2>
+              {/block:Title}
+              <ul class="post-chat">
+                {block:Lines}
+                <li class="{Alt} line">
+                  {block:Label}
+                  <p class="label">{Label}</p>
+                  {/block:Label}
+                  {Line}
+                </li>
+                {/block:Lines}
+              </ul>
+                  {block:Date}
+                  <footer class="post-footer">
+                    <ul class="list">
+                        {block:NoteCount}
+                        <li class="item item-notes">
+                          <a id="notes" class="notes" href="{Permalink}#notes">{NoteCountWithLabel}</a>
+                        </li>
+                                    {/block:NoteCount}
+        
+                      {block:HasTags}
+                      <li class="item item-tags">
+                          <ul class="post-tags">
+                            {block:Tags}
+                            <li class="item">
+                              <a class="post__tag-link" href="{TagURL}">#{Tag}</a>
+                            </li>
+                            {/block:Tags}
+                          </ul>
+                        </li>
+                      {/block:HasTags}
+                        <li class="item item-like">{LikeButton}</li>
+                        <li class="item item-reblog"><a class="reblog_button" href="{ReblogURL}">Reblog</a></li>
+                    </ul>
+                  </footer>
+                  {/block:Date}
+            </div>
+          {/block:Chat}
+
+          {block:Audio}
+          <div class="js-fitvids media">
+              {AudioEmbed-640}
+          </div>
+          <div class="post-content">
+              <div class="post-meta">
+                  {block:Date}
+                  <div class="post-date">
+                    <a class="timestamp" href="{Permalink}" title="{DayOfWeek}, {DayOfMonth} {Month} {Year}, {24Hour}:{Minutes}:{Seconds}">{DayOfMonthWithZero}/{MonthNumberWithZero}/{Year}</a>
+                  </div>
+                  {/block:Date}
+                  {block:Caption}
+                  {block:NotReblog}
+                  <section class="caption">
+                    {Caption}
+                  </section>
+                  {block:More}<a href="{Permalink}">Read More &rarr;</a>{/block:More}
+                  {/block:NotReblog}
+                  {/block:Caption}
+              </div>
+              {block:Date}
+              <footer class="post-footer">
+                <ul class="list">
+                    {block:NoteCount}
+                    <li class="item item-notes">
+                      <a id="notes" class="notes" href="{Permalink}#notes">{NoteCountWithLabel}</a>
+                    </li>
+                                {/block:NoteCount}
+    
+                  {block:HasTags}
+                  <li class="item item-tags">
+                      <ul class="post-tags">
+                        {block:Tags}
+                        <li class="item">
+                          <a class="post__tag-link" href="{TagURL}">#{Tag}</a>
+                        </li>
+                        {/block:Tags}
+                      </ul>
+                    </li>
+                  {/block:HasTags}
+                    <li class="item item-like">{LikeButton}</li>
+                    <li class="item item-reblog"><a class="reblog_button" href="{ReblogURL}">Reblog</a></li>
+                </ul>
+              </footer>
+              {/block:Date}
+          </div>
+          {/block:Audio}
+
+          {block:Video}
+          <div class="js-fitvids media">
+              {Video-700}
+          </div>
+          <div class="post-content">
+              <div class="post-meta">
+                  {block:Date}
+                  <div class="post-date">
+                    <a class="timestamp" href="{Permalink}" title="{DayOfWeek}, {DayOfMonth} {Month} {Year}, {24Hour}:{Minutes}:{Seconds}">{DayOfMonthWithZero}/{MonthNumberWithZero}/{Year}</a>
+                  </div>
+                  {/block:Date}
+                  {block:Caption}
+                  {block:NotReblog}
+                  <section class="caption">
+                    {Caption}
+                  </section>
+                  {block:More}<a href="{Permalink}">Read More &rarr;</a>{/block:More}
+                  {/block:NotReblog}
+                  {/block:Caption}
+              </div>
+              {block:Date}
+              <footer class="post-footer">
+                <ul class="list">
+                    {block:NoteCount}
+                    <li class="item item-notes">
+                      <a id="notes" class="notes" href="{Permalink}#notes">{NoteCountWithLabel}</a>
+                    </li>
+                                {/block:NoteCount}
+    
+                  {block:HasTags}
+                  <li class="item item-tags">
+                      <ul class="post-tags">
+                        {block:Tags}
+                        <li class="item">
+                          <a class="post__tag-link" href="{TagURL}">#{Tag}</a>
+                        </li>
+                        {/block:Tags}
+                      </ul>
+                    </li>
+                  {/block:HasTags}
+                    <li class="item item-like">{LikeButton}</li>
+                    <li class="item item-reblog"><a class="reblog_button" href="{ReblogURL}">Reblog</a></li>
+                </ul>
+              </footer>
+              {/block:Date}
+          </div>
+          {/block:Video}
+
+          {block:Answer}
+          <h2 class="title">{Asker} asked: {Question}</h2>
+          {block:Answerer}
+          <img class="reblog__icon" src="{AnswererPortraitURL-16}">{Answerer}
+          <section class="caption">
+            {Answer}
+          </section>
+          {block:More}<a href="{Permalink}">Read More &rarr;</a>{/block:More}
+          {/block:Answerer}
+          {block:NotReblog}
+          <div class="reblog-list">
+            {Replies}
+          </div>
+          {/block:NotReblog}
+          {/block:Answer}
+        </article>
+
+        {block:PostNotes}
+        <div class="content post-notes">
+          <div class="inner">
+              <div class="block-dummy"></div>
+              {PostNotes-64}
+          </div>
+        </div>
+        {/block:PostNotes}
+        {/block:Posts}
+        
+        {block:Pagination}
+        <nav class="pagination" aria-label="Pagination">
+          <a href="{PreviousPage}" id="previous" class="pagination-previous"></a>
+          {block:NextPage}
+          <a href="{NextPage}" id="next" class="pagination-next">Load more</a>
+          {/block:NextPage}
+        </nav>
+        {/block:Pagination}
+  </main>
+  </div>
+
+  <span class="copyright">
+    Theme by <a href="http://otherthemes.com">Other</a>
+  </span>
+
+      {block:IndexPage}
+      <script src="https://static.tumblr.com/nxwjyyg/gDfq92orf/infinitescroll.min.js"></script>
+      <script src="https://static.tumblr.com/nxwjyyg/cV6q94ylp/manual.min.js"></script>
+      {/block:IndexPage}
+      <script src="https://static.tumblr.com/nxwjyyg/pBMq92okw/pxuphotoset.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fitvids/1.1.0/jquery.fitvids.min.js"></script>
+      <script src="https://static.tumblr.com/nxwjyyg/5XJq9366r/jquery.cookie.min.js"></script>
+      
+      <script>
+            $(function() {
+                app.onImagesLoad(), app.initInfinite(), app.fitVids(), app.initPhotoset(), app.initNotes(), app.scrollPostback()
+                
+                $(".pagination-next").click(function(event) {
+                    $(this).html('{lang:Loading}...');
+                });
+            });
+            var app = {
+                scrollPostback: function() {
+                    var top = parseInt($.cookie("top"));
+                    if (top) $(document).scrollTop(top);
+                    $(document).scroll(function () {
+                         var top = $(document).scrollTop();
+                        $.cookie("top", top);
+                    })              
+                },
+                fitVids: function() {
+                    $(".js-fitvids").fitVids(), $(".js-fitvids").fitVids({
+                        customSelector: "iframe[src^='https://www.tumblr.com'], iframe[src^='https://w.soundcloud.com/'], iframe[src^='https://embed.spotify.com/'], iframe[src^='https://open.spotify.com/']"
+                    })
+                },
+                initPhotoset: function() {
+                    $(".photo-slideshow").pxuPhotoset({
+                        lightbox: !0,
+                        highRes: !0,
+                        rounded: !1,
+                        exif: !1,
+                        captions: !1,
+                        gutter: "15px",
+                        photoset: ".photo-slideshow",
+                        photoWrap: ".photo-data",
+                        photo: ".pxu-photo"
+                    })
+                },
+                initNotes: function() {
+                    $(".permalink #notes").click(function(a) {
+                        return a.preventDefault(), $(this).toggleClass("active"), $(".post-notes").toggle(), !1
+                    })
+                },
+                initInfinite: function() {
+                    if ($(".permalink").length) {
+                        return
+                    }
+
+                    var a = $(".posts");
+                    a.infinitescroll({
+                        navSelector: ".pagination",
+                        nextSelector: ".pagination-next",
+                        itemSelector: ".post",
+                        appendCallback: true,
+                        bufferPx: 100,
+                        {block:IfNotEndlessScroll}behavior: "twitter",{/block:IfNotEndlessScroll}
+                        loading: {
+                            finishedMsg: " ",
+                            img: "data:image/gif;base64,R0lGODlhAQABAHAAACH5BAUAAAAALAAAAAABAAEAAAICRAEAOw==",
+                            msg: null,
+                            {block:IfNotEndlessScroll}msgText: " ",{/block:IfNotEndlessScroll}
+                            {block:IfEndlessScroll}msgText: "{lang:Loading}...",{/block:IfEndlessScroll}
+                            selector: null,
+                            finished: function() {
+                                 $(".posts").append( $(".pagination"));
+                                 $(".posts").append( $("#infscr-loading"));
+                                 $(".pagination-next").html('{lang:Load more posts}');
+                            }
+                        }
+                    }, function(a) {
+                        var b = $(a).css({
+                                opacity: 0
+                            }),
+                            c = b.map(function() {
+                                return this.id
+                            }).get();
+                        b.imagesLoaded(function() {
+                            b.animate({
+                                opacity: 1
+                            }), b.find(".photo-slideshow").pxuPhotoset(), app.fitVids(), $(".js-fitvids").fitVids({
+                                customSelector: "iframe[src^='https://www.tumblr.com'], iframe[src^='https://w.soundcloud.com/'], iframe[src^='https://embed.spotify.com/']"
+                            })
+                        });
+                        var c = b.map(function() {
+                            return this.id
+                        }).get();
+                        Tumblr.LikeButton.get_status_by_post_ids(c)
+                    })
+                },
+                scrollPostback: function() {
+                    var a = parseInt($.cookie("top"));
+                    a && $(document).scrollTop(a), $(document).scroll(function() {
+                        var a = $(document).scrollTop();
+                        $.cookie("top", a)
+                    })
+                },
+                onImagesLoad: function() {
+                    if ($(".permalink").length) {
+                        return
+                    }
+                    $(".content.post").imagesLoaded().always(function(a) {})
+                }
+            };
+      </script>
+    </body>
+
+    </html>
